@@ -522,7 +522,7 @@ button {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit:fill;
+    object-fit: cover;
     object-position: top center;
     transition: transform .7s ease;
 }
@@ -907,22 +907,6 @@ button {
         min-height: 420px
     }
 
-    .project-image-frame {
-        width: 86%;
-        left: 7%;
-        height: 330px;
-        top: 55px;
-    }
-
-    .study-image-frame,
-    .prep-image-frame,
-    .lumera-image-frame {
-        width: 86%;
-        left: 7%;
-        height: 330px;
-        top: 55px;
-    }
-
     .project-info {
         padding: 30px
     }
@@ -959,5 +943,213 @@ button {
     .reveal {
         opacity: 1;
         transform: none
+    }
+}
+/* =========================================
+   RESPONSIVE PROJECT SECTION
+========================================= */
+
+/* TABLET */
+@media (max-width: 1000px) {
+
+    .project-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .project-preview {
+        width: 100%;
+        min-height: 560px;
+    }
+
+    .project-info {
+        min-height: 420px;
+    }
+
+    /* Study Hub - Two Mobile Screens */
+    .study-image-frame {
+        width: 27%;
+        height: 450px;
+        left: 55%;
+        top: 55px;
+    }
+
+    .studyy-image-frame {
+        width: 27%;
+        height: 450px;
+        left: 18%;
+        top: 55px;
+    }
+
+    /* Prep AI */
+    .prep-image-frame {
+        width: 84%;
+        height: 420px;
+        left: 8%;
+        top: 75px;
+    }
+
+    /* Lumera */
+    .lumera-image-frame {
+        width: 78%;
+        height: 430px;
+        left: 11%;
+        top: 65px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 760px) {
+
+    .projects-heading {
+        margin-bottom: 45px;
+    }
+
+    .project-list {
+        gap: 28px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .project-preview {
+        width: 100%;
+        min-height: 420px;
+    }
+
+    /* STUDY HUB */
+    .study .project-preview {
+        min-height: 440px;
+    }
+
+    .study-image-frame {
+        width: 34%;
+        height: 330px;
+        left: 55%;
+        top: 60px;
+        border-width: 4px;
+        border-radius: 20px;
+    }
+
+    .studyy-image-frame {
+        width: 34%;
+        height: 330px;
+        left: 12%;
+        top: 60px;
+        border-width: 4px;
+        border-radius: 20px;
+    }
+
+    /* PREP AI */
+    .prep-image-frame {
+        width: 88%;
+        height: 300px;
+        left: 6%;
+        top: 70px;
+        border-width: 4px;
+    }
+
+    /* LUMERA */
+    .lumera-image-frame {
+        width: 88%;
+        height: 310px;
+        left: 6%;
+        top: 65px;
+        border-width: 4px;
+    }
+
+    .project-info {
+        padding: 30px 24px;
+        min-height: auto;
+    }
+
+    .project-info h3 {
+        font-size: 40px;
+    }
+
+    .project-description {
+        margin: 24px 0 20px;
+    }
+
+    .figma-btn {
+        margin-top: 30px;
+    }
+
+    .preview-word {
+        font-size: 75px;
+    }
+
+    .editorial-word {
+        font-size: 60px;
+    }
+
+    .spark {
+        font-size: 48px;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .project-preview {
+        min-height: 360px;
+    }
+
+    /* STUDY HUB */
+    .study .project-preview {
+        min-height: 390px;
+    }
+
+    .study-image-frame {
+        width: 35%;
+        height: 285px;
+        left: 55%;
+        top: 65px;
+    }
+
+    .studyy-image-frame {
+        width: 35%;
+        height: 285px;
+        left: 10%;
+        top: 65px;
+    }
+
+    /* PREP AI */
+    .prep-image-frame {
+        width: 90%;
+        height: 250px;
+        left: 5%;
+        top: 70px;
+    }
+
+    /* LUMERA */
+    .lumera-image-frame {
+        width: 90%;
+        height: 260px;
+        left: 5%;
+        top: 65px;
+    }
+
+    .preview-label {
+        top: 18px;
+        left: 18px;
+        font-size: 8px;
+    }
+
+    .project-info {
+        padding: 26px 20px;
+    }
+
+    .project-info h3 {
+        font-size: 36px;
+    }
+
+    .project-description {
+        font-size: 14px;
+        line-height: 1.7;
     }
 }
