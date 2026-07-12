@@ -420,10 +420,11 @@ button {
 
 .stats {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     border-top: 1px solid var(--line);
     margin-top: 38px;
-    padding-top: 25px
+    padding-top: 25px;
+    gap: 120px;
 }
 
 .stats strong {
