@@ -493,6 +493,12 @@ button {
 .lumera .project-preview {
     background: #b8d0bf
 }
+.job .project-preview {
+    background: #e1cbed
+}
+.coffee .project-preview {
+    background: #34817f
+}
 
 .preview-label {
     position: absolute;
